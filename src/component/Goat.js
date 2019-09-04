@@ -19,7 +19,7 @@ const Goat = () => {
     } else {
       setDisplayWarning(false)
     }
-    setLoading(true)
+    // setLoading(true)
     let url = ''
     if (daring) {
       url = `${BASE_URL}/goatse/${width}`
@@ -29,9 +29,9 @@ const Goat = () => {
     // If height is provided
     if (height !== '') url += `/${height}`
 
-    await axios.get(url)
+    // await axios.get(url)
     setImg(url)
-    setLoading(false)
+    // setLoading(false)
   }
 
   return (
@@ -67,11 +67,7 @@ const Goat = () => {
         onChange={e => setDaring(e.target.checked)}
       />
       <input type="button" value="Give me a goat" onClick={fetchGoat} />
-      {loading ? (
-        <img src={Spinner} alt="Loading..." />
-      ) : (
-        <img src={img} alt="" />
-      )}
+      <img src={img} alt="" />
     </div>
   )
 }

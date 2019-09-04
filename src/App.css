@@ -28,6 +28,8 @@ input[type='number'] {
 input[type='checkbox'] {
   margin-left: 5px;
   display: inline;
+  position: relative;
+  top: 1px;
 }
 
 input[type='button'] {
