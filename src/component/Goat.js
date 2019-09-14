@@ -3,7 +3,7 @@ import Spinner from './Spinner.svg'
 import axios from 'axios'
 
 const Goat = () => {
-  const BASE_URL = 'https://placegoat.com'
+  const BASE_URL = 'https://cors-anywhere.herokuapp.com/https://placegoat.com'
   const [width, setWidth] = useState(200)
   const [height, setHeight] = useState(200)
   const [daring, setDaring] = useState(false)
